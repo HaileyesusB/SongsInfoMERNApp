@@ -1,0 +1,32 @@
+
+GET http://localhost:3001/subscribers
+
+###
+GET http://localhost:3001/subscribers/65c09bf501204c2689560890
+
+###
+POST http://localhost:3001/subscribers/
+Content-Type: application/json
+
+
+ {
+    "title": "DEF",
+   
+    "artist": "GHI",
+    
+    "album": "KLM",
+    
+    "genre": "456"
+ }
+     
+
+###
+Delete http://localhost:3001/subscribers/65c0afefe4e04465f68deca5
+
+###
+PATCH  http://localhost:3001/subscribers/65c0ac5c53fe914728a3049a
+Content-Type: application/json
+
+ {
+    "title": "GHI"
+ }
